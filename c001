@@ -1,1 +1,50 @@
-1441583709 APPLY MAILBOX %(UNIQUEID 12345-67890-abcdef MBOXNAME example.com!user.testuser LAST_UID 1 HIGHESTMODSEQ 1 RECENTUID 1 RECENTTIME 1441583709 LAST_APPENDDATE 1441583709 POP3_LAST_LOGIN 1441583709 UIDVALIDITY 1 PARTITION default ACL junkacl OPTIONS junkoptions RECORD () ANNOTATIONS () POP3_SHOW_AFTER 1441583709 MBOXTYPE a XCONVMODSEQ 1 SYNC_CRC 1 SYNC_CRC_ANNOT 1)
+# cyrus backup: chunk start 1437709276
+1437709276 APPLY RESERVE %(PARTITION default MBOXNAME (example.com!user.testuser example.com!user.testuser.#addressbooks example.com!user.testuser.#addressbooks.Default example.com!user.testuser.#calendars example.com!user.testuser.Archive example.com!user.testuser.Drafts example.com!user.testuser.Sent example.com!user.testuser.Spam example.com!user.testuser.Trash) GUID (a232e27597c6aeab5a791ab3582e839ade771868))
+1437709276 APPLY MESSAGE (%{default a232e27597c6aeab5a791ab3582e839ade771868 2072}
+Return-Path: <sender@example.com>
+Received: from compute.internal (compute.example.internal [10.202.2.41])
+	 by sloti30t14 (Cyrus 3.0-git-staging-11636) with LMTPA;
+	 Thu, 23 Jul 2015 23:41:09 -0400
+X-Sieve: CMU Sieve 2.4
+X-Spam-score: 0.0
+X-Spam-hits: ALL_TRUSTED -1, BAYES_40 -0.001, LANGUAGES unknown, BAYES_USED global,
+  SA_VERSION 3.3.2
+X-Backscatter: NotFound1
+X-Backscatter-Hosts: 
+X-Spam-source: IP='127.0.0.1', Host='unk', Country='unk', FromHeader='com',
+  MailFrom='com'
+X-Spam-charsets: 
+X-Resolved-to: testuser@example.com
+X-Delivered-to: testuser@example.com
+X-Mail-from: sender@example.com
+Received: from mx ([10.202.2.200])
+  by compute.internal (LMTPProxy); Thu, 23 Jul 2015 23:41:09 -0400
+Received: from mx.example.internal (localhost [127.0.0.1])
+	by mx.example.internal (Postfix) with ESMTP id BC459F20003
+	for <testuser@example.com>; Thu, 23 Jul 2015 23:41:08 -0400 (EDT)
+Received: from mx.example.internal (localhost [127.0.0.1])
+    by mx.example.internal (Authentication Milter) with ESMTP
+    id 5BC7023C1C7.A69BDF2001C;
+    Thu, 23 Jul 2015 23:41:08 -0400
+Authentication-Results: mx.example.internal;
+    dkim=none (no signatures found);
+    x-local-ip=pass
+Received: from mailforward.example.internal (gateway1.example.internal [10.202.2.221])
+	(using TLSv1.2 with cipher ECDHE-RSA-AES256-GCM-SHA384 (256/256 bits))
+	(No client certificate requested)
+	by mx.example.internal (Postfix) with ESMTPS id A69BDF2001C
+	for <testuser@example.com>; Thu, 23 Jul 2015 23:41:08 -0400 (EDT)
+Received: from imap.example.internal (imap.example.internal [10.202.2.80])
+	by mailforward.example.internal (Postfix) with ESMTP id A0D0F2092F
+	for <testuser@example.com>; Thu, 23 Jul 2015 23:41:08 -0400 (EDT)
+Received: by imap.example.internal (Postfix, from userid 0)
+	id 9647FF06058; Thu, 23 Jul 2015 23:41:08 -0400 (EDT)
+To: testuser@example.com
+Subject: test subject
+Message-Id: <20150724034108.9647FF06058@imap.example.internal>
+Date: Thu, 23 Jul 2015 23:41:08 -0400 (EDT)
+From: sender@example.com
+
+blah blah blah
+)
+1437709276 APPLY MAILBOX %(UNIQUEID c9b2384f-9e60-48f4-a99e-fe925f91e4a5 MBOXNAME example.com!user.testuser LAST_UID 4 HIGHESTMODSEQ 5934 RECENTUID 4 RECENTTIME 1437709269 LAST_APPENDDATE 1437709269 POP3_LAST_LOGIN 0 POP3_SHOW_AFTER 0 UIDVALIDITY 1417474540 PARTITION default ACL "testuser@example.com	lrswipkxtecdn	admin	lrswipkxtecdan	anyone	p	" OPTIONS P SYNC_CRC 2528538021 SYNC_CRC_ANNOT 2345855257 QUOTAROOT example.com!user.testuser XCONVMODSEQ 5934 RECORD (%(UID 4 MODSEQ 5934 LAST_UPDATED 1437709269 FLAGS ($X-ME-Annot-2) INTERNALDATE 1437709269 SIZE 2119 GUID a232e27597c6aeab5a791ab3582e839ade771868 ANNOTATIONS (%(ENTRY /vendor/messagingengine.com/preview USERID "" VALUE "blah blah blah") %(ENTRY /vendor/cmu/cyrus-imapd/thrid USERID NIL VALUE a232e27597c6aeab)))))
