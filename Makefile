@@ -3,5 +3,5 @@ CHUNKFILES := $(sort $(wildcard c???))
 
 all: $(TARGET)
 
-backup.gz: $(CHUNKFILES)
+$(TARGET): $(CHUNKFILES)
 	gzip -c $^ > $@
