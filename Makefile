@@ -1,5 +1,5 @@
 TARGET := backup.gz
-CHUNKFILES := $(wildcard c???)
+CHUNKFILES := $(sort $(wildcard c???))
 
 all: $(TARGET)
 
