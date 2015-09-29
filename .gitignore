@@ -1,4 +1,4 @@
-*.gz
+backup
 *.index
 *.index.old
 *.index-journal

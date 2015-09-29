@@ -1,4 +1,4 @@
-TARGET := backup.gz
+TARGET := backup
 CHUNKFILES := $(sort $(wildcard c???))
 
 all: $(TARGET)
