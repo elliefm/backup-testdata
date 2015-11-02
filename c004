@@ -1,7 +1,7 @@
 # cyrus backup: chunk start 1437709425
 1437709425 APPLY MAILBOX %(UNIQUEID afd5c459-0ea6-418b-8cd7-ec3c4f9ac6eb MBOXNAME example.com!user.testuser.#calendars.b7eb1eab-a6dc-4ef5-b44f-ac67efcfb5e0 MBOXTYPE c LAST_UID 0 HIGHESTMODSEQ 5939 RECENTUID 0 RECENTTIME 0 LAST_APPENDDATE 0 POP3_LAST_LOGIN 0 POP3_SHOW_AFTER 0 UIDVALIDITY 1437709415 PARTITION default ACL "testuser@example.com	lrswipkxtecdn	admin	lrswipkxtecdan	anyone	p	" OPTIONS P SYNC_CRC 0 SYNC_CRC_ANNOT 0 QUOTAROOT example.com!user.testuser ANNOTATIONS (%(ENTRY /vendor/cmu/cyrus-httpd/<DAV:>displayname USERID "" VALUE Calendar) %(ENTRY /vendor/cmu/cyrus-httpd/<urn:ietf:params:xml:ns:caldav>X-FM-isVisible USERID "" VALUE 1)) RECORD ())
 1437709425 APPLY MAILBOX %(UNIQUEID 6e15a68e-ccd9-4bff-a3cb-1de3f9303823 MBOXNAME example.com!user.testuser.testfolder LAST_UID 0 HIGHESTMODSEQ 5940 RECENTUID 0 RECENTTIME 0 LAST_APPENDDATE 0 POP3_LAST_LOGIN 0 POP3_SHOW_AFTER 0 UIDVALIDITY 1437709420 PARTITION default ACL "testuser@example.com	lrswipkxtecdn	admin	lrswipkxtecdan	anyone	p	" OPTIONS P SYNC_CRC 0 SYNC_CRC_ANNOT 0 QUOTAROOT example.com!user.testuser RECORD ())
-1437709425 APPLY SIEVE %(USERID testuser@example.com FILENAME websieve.script LAST_UPDATE 1437709420 CONTENT {471+}
+1437709425 APPLY SIEVE %(USERID testuser@example.com FILENAME websieve.script LAST_UPDATE 1437709420 CONTENT {471}
 require ["envelope", "imapflags", "fileinto", "reject", "notify", "vacation", "regex", "relational", "comparator-i;ascii-numeric", "body", "copy"];
 
 if not header :contains ["X-Spam-known-sender"] "yes" {
